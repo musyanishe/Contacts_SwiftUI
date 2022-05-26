@@ -6,7 +6,7 @@
 //
 
 
-class DataManager: Identifiable {
+class DataManager {
     
     static let dataManager = DataManager()
     

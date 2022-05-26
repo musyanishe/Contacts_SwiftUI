@@ -23,6 +23,7 @@ struct ContactInfoView: View {
             ContactInfoRowView(image: "envelope", contactInfo: person.email)
             ContactInfoRowView(image: "phone", contactInfo: person.phone)
         }
+        .navigationTitle(person.title)
     }
 }
 

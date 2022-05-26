@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    let contacts = Person.getPersonsInfo()
+    
     var body: some View {
         TabView{
             ContactsView()

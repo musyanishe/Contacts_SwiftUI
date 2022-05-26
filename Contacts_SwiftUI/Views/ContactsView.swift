@@ -12,11 +12,15 @@ struct ContactsView: View {
     
     var body: some View {
         NavigationView{
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            List(contacts) { person in
+                NavigationLink(
+                    person.title,
+                    destination: ContactInfoView(person: person)
+                )
+            }
+            .navigationTitle("Contact List")
+        }
     }
-        .navigationTitle("Contact List")
-    }
-    
 }
 
 struct ContactsView_Previews: PreviewProvider {
