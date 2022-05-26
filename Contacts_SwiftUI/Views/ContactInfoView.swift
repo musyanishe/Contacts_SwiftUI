@@ -8,13 +8,26 @@
 import SwiftUI
 
 struct ContactInfoView: View {
+    let person: Person
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List{
+            HStack{
+                Spacer()
+                Image(systemName: "person.fill.questionmark")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                Spacer()
+            }
+            
+            ContactInfoRowView(image: "envelope", contactInfo: person.email)
+            ContactInfoRowView(image: "phone", contactInfo: person.phone)
+        }
     }
 }
 
 struct ContactInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactInfoView()
+        ContactInfoView(person: Person.getPersonsInfo().first!)
     }
 }
