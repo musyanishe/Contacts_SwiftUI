@@ -5,9 +5,8 @@
 //  Created by Евгения Шевцова on 26.05.2022.
 //
 
-import SwiftUI
 
-class DataManager: NSObject, Identifiable {
+class DataManager: Identifiable {
     
     static let dataManager = DataManager()
     
@@ -16,6 +15,6 @@ class DataManager: NSObject, Identifiable {
     let emails: [String] = ["foma@gmail.com", "hope@yandex.ru", "lol@mail.ru", "tratata@gmail.com"]
     let phoneNumbers: [String] = ["87124562387", "89805623465", "89276534576", "89126324672"]
     
-    private override init() {}
+    private init() {}
 }
 

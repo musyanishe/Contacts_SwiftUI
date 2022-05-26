@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView{
-            ContentView()
+            ContactsView()
                 .tabItem{
                     Image(systemName: "person.3.fill")
                     Text("Contacts")

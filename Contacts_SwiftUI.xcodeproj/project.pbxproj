@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CE041CFC284005E000893ACA /* NumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE041CFB284005E000893ACA /* NumbersView.swift */; };
+		CE041D01284009D900893ACA /* ContactInfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE041D00284009D900893ACA /* ContactInfoRowView.swift */; };
+		CE041D0328400C4000893ACA /* ContactInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE041D0228400C3F00893ACA /* ContactInfoView.swift */; };
 		CE2D0B09283EC55000DE7AA7 /* Contacts_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D0B08283EC55000DE7AA7 /* Contacts_SwiftUIApp.swift */; };
 		CE2D0B0B283EC55000DE7AA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2D0B0A283EC55000DE7AA7 /* ContentView.swift */; };
 		CE2D0B0D283EC55200DE7AA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2D0B0C283EC55200DE7AA7 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		CE041CFB284005E000893ACA /* NumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersView.swift; sourceTree = "<group>"; };
+		CE041D00284009D900893ACA /* ContactInfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoRowView.swift; sourceTree = "<group>"; };
+		CE041D0228400C3F00893ACA /* ContactInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoView.swift; sourceTree = "<group>"; };
 		CE2D0B05283EC55000DE7AA7 /* Contacts_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2D0B08283EC55000DE7AA7 /* Contacts_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts_SwiftUIApp.swift; sourceTree = "<group>"; };
 		CE2D0B0A283EC55000DE7AA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +44,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE041CFD284008D000893ACA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE2D0B18283FDD3D00DE7AA7 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE041CFE284008E800893ACA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE2D0B16283FDCB800DE7AA7 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE041CFF2840090500893ACA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE2D0B0A283EC55000DE7AA7 /* ContentView.swift */,
+				CE2D0B1A283FDE4F00DE7AA7 /* ContactsView.swift */,
+				CE041CFB284005E000893ACA /* NumbersView.swift */,
+				CE041D0228400C3F00893ACA /* ContactInfoView.swift */,
+				CE041D00284009D900893ACA /* ContactInfoRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CE2D0AFC283EC55000DE7AA7 = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				CE2D0B08283EC55000DE7AA7 /* Contacts_SwiftUIApp.swift */,
-				CE2D0B0A283EC55000DE7AA7 /* ContentView.swift */,
-				CE2D0B1A283FDE4F00DE7AA7 /* ContactsView.swift */,
-				CE041CFB284005E000893ACA /* NumbersView.swift */,
-				CE2D0B18283FDD3D00DE7AA7 /* Person.swift */,
-				CE2D0B16283FDCB800DE7AA7 /* DataManager.swift */,
+				CE041CFF2840090500893ACA /* Views */,
+				CE041CFD284008D000893ACA /* Models */,
+				CE041CFE284008E800893ACA /* Services */,
 				CE2D0B0C283EC55200DE7AA7 /* Assets.xcassets */,
 				CE2D0B0E283EC55200DE7AA7 /* Preview Content */,
 			);
@@ -149,8 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE041D01284009D900893ACA /* ContactInfoRowView.swift in Sources */,
 				CE2D0B0B283EC55000DE7AA7 /* ContentView.swift in Sources */,
 				CE2D0B17283FDCB800DE7AA7 /* DataManager.swift in Sources */,
+				CE041D0328400C4000893ACA /* ContactInfoView.swift in Sources */,
 				CE2D0B19283FDD3D00DE7AA7 /* Person.swift in Sources */,
 				CE041CFC284005E000893ACA /* NumbersView.swift in Sources */,
 				CE2D0B1B283FDE4F00DE7AA7 /* ContactsView.swift in Sources */,
